@@ -1,0 +1,87 @@
+% !Mode:: "TeX:UTF-8"
+% !TEX program  = xelatex
+\documentclass{sdureport}
+
+% no head line or foot line
+%\pagestyle{empty}
+
+% just for filling a few pages
+\usepackage{blindtext}
+
+% initialize the variable texts
+\sduCollege{计算机科学与技术}
+\sduCourse{机器学习}
+\sduSdudentId{202012345678}
+\sduName{你的姓名}
+\sduClass{你的班级}
+\sduExperimentalTopics{实验题目}
+\sduExexperimentalHours{6h}
+\sduDate{\today}
+
+\begin{document}
+\begin{sduDocument}	
+
+	\section{硬件环境}
+	\begin{itemize}[leftmargin=1em] 
+		\item Thinkpad T460s(i5 6200U, 16G RAM)
+	\end{itemize}
+
+	\section{软件环境}
+	\begin{itemize}[leftmargin=1em] 
+		\item MATLAB R2019a
+	\end{itemize}
+	
+	\section{实验目的}
+	这里写实验目的
+	\section{实验记录}
+	段落	段落	段落	段落	段落	段落
+	段落	
+	
+	
+
+	段落	段落
+	\subsection{二级标题}
+	\subsubsection{三级标题}
+	
+	有序列表		
+	\begin{enumerate}
+		\item 迭代次数：1868
+		\item $\theta$：[-0.0566, 1.4720, 1.5706]
+		\item 见：图\ref{L1}
+		\item 见：图\ref{b1}
+		\item 此学生不被录取的概率：0.6680
+	\end{enumerate}
+
+	\begin{figure}[H]
+		\subfigure[Loss 变化曲线]{
+			\label{L1}
+			\includegraphics[width=0.45\textwidth]{image/L1.png}}
+		\subfigure[Decision Boundary]{
+			\label{b1}
+			\includegraphics[width=0.45\textwidth]{image/b1.png}}
+		\caption{梯度下降法}
+	\end{figure}
+	\begin{figure}[H]
+	\subfigure[Loss 变化曲线]{
+		\label{L2}
+		\includegraphics[width=0.45\textwidth]{image/L2.png}}
+	\subfigure[Decision Boundary]{
+		\label{b2}
+		\includegraphics[width=0.45\textwidth]{image/b2.png}}
+	\caption{牛顿法}
+	\end{figure}
+
+\end{sduDocument}
+
+\begin{lstlisting}[language=matlab]
+x = load("data2/ex2x.dat");
+y = load("data2/ex2y.dat");
+n = length(x);
+x = [ones(n, 1), x];
+stds = std(x);
+mu = mean(x);
+x(:, 2) = (x(:, 2) - mu(2)) ./ stds(2);
+x(:, 3) = (x(:, 3) - mu(3)) ./ stds(3);
+\end{lstlisting}
+
+\end{document}
