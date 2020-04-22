@@ -47,7 +47,7 @@
 \titleformat{\subsection}[block]{\large}{\arabic{subsection}}{0.5em}{}
 \titleformat{\subsubsection}[block]{\large}{\arabic{subsection}.\arabic{subsubsection}}{0.5em}{}
 
-\setlength{\parindent}{0pt}
+% \setlength{\parindent}{0pt}
 \pagestyle{plain}
 
 % 代码样式
@@ -81,23 +81,23 @@
 		\setlength{\unitlength}{1mm}
 %		\put( 17, -45.6){\line(1,0){176}} % 上横线
 		\put( 20, -51.6){\makebox(0,0)[l]{学号：\sdu@tokens@sdudentId}}
-		\put( 77, -55.6){\line(0,1){10}}
+		\put( 77, -55.6){\line(0,1){9}}
 		\put( 80, -51.6){\makebox(0,0)[l]{姓名：\sdu@tokens@name}}
-		\put( 137, -55.6){\line(0,1){10}}
+		\put( 137, -55.6){\line(0,1){9}}
 		\put( 140, -51.6){\makebox(0,0)[l]{班级：\sdu@tokens@class}}
 		\put( 17, -55.6){\line(1,0){176}} % 下横线
-		\put( 20, -61.6){\makebox(0,0)[l]{实验题目：\sdu@tokens@experimentalTopics}}
+		\put( 20, -60.6){\makebox(0,0)[l]{实验题目：\sdu@tokens@experimentalTopics}}
 		\put( 17, -65.6){\line(1,0){176}} % 下横线
-		\put( 20, -71.6){\makebox(0,0)[l]{实验学时：\sdu@tokens@experimentalHours}}
-		\put( 77, -75.6){\line(0,1){10}}
-		\put( 80, -71.6){\makebox(0,0)[l]{实验日期：\sdu@tokens@date}}
-		\put( 17, -75.6){\line(1,0){176}} % 下横线
+		\put( 20, -70.6){\makebox(0,0)[l]{实验学时：\sdu@tokens@experimentalHours}}
+		\put( 77, -74.8){\line(0,1){9.3}}
+		\put( 80, -70.6){\makebox(0,0)[l]{实验日期：\sdu@tokens@date}}
+		% \put( 17, -75.6){\line(1,0){176}} % 下横线
 	}
-	\vspace{25.2 mm}
+	\vspace{23.1mm}
 }
 {
 	\end{framed}
-	\vspace{4 mm}\begin{center}\huge{附录}\end{center}
+	% \vspace{4 mm}\begin{center}\huge{附录}\end{center}
 }
 %\newcommand\sduAppendix{\vspace{4 mm}\begin{center}\huge{附录}\end{center}}
 

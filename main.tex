@@ -7,33 +7,31 @@
 
 % just for filling a few pages
 \usepackage{blindtext}
-
+\usepackage{ctex}
+\usepackage{indentfirst}
 % initialize the variable texts
 \sduCollege{计算机科学与技术}
-\sduCourse{机器学习}
+\sduCourse{计算机组成与设计}
 \sduSdudentId{202012345678}
 \sduName{你的姓名}
 \sduClass{你的班级}
-\sduExperimentalTopics{实验题目}
-\sduExexperimentalHours{6h}
+\sduExperimentalTopics{实验2\  逻辑运算电路}
+\sduExexperimentalHours{2h}
 \sduDate{\today}
 
 \begin{document}
 \begin{sduDocument}	
+	\section{实验目的：}	
+	设计一个能实现1位逻辑乘$ab$、逻辑或$a+b$、半加$(a\bigoplus b)$的逻辑运算电路。
 
-	\section{硬件环境}
+	\section{实验软件和硬件环境：}
 	\begin{itemize}[leftmargin=1em] 
-		\item Thinkpad T460s(i5 6200U, 16G RAM)
-	\end{itemize}
-
-	\section{软件环境}
-	\begin{itemize}[leftmargin=1em] 
-		\item MATLAB R2019a
+		\item QuartusII 软件
+	    \item Windows10 Intel(R) Core(TM) i7-8750H CPU @ 2.20GHz
 	\end{itemize}
 	
-	\section{实验目的}
-	这里写实验目的
-	\section{实验记录}
+
+	\section{实验步骤：}
 	段落	段落	段落	段落	段落	段落
 	段落	
 	
@@ -73,15 +71,5 @@
 
 \end{sduDocument}
 
-\begin{lstlisting}[language=matlab]
-x = load("data2/ex2x.dat");
-y = load("data2/ex2y.dat");
-n = length(x);
-x = [ones(n, 1), x];
-stds = std(x);
-mu = mean(x);
-x(:, 2) = (x(:, 2) - mu(2)) ./ stds(2);
-x(:, 3) = (x(:, 3) - mu(3)) ./ stds(3);
-\end{lstlisting}
 
 \end{document}
