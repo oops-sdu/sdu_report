@@ -48,6 +48,8 @@
 \titleformat{\subsubsection}[block]{\large}{\arabic{subsection}.\arabic{subsubsection}}{0.5em}{}
 
 % \setlength{\parindent}{0pt}
+\setlength{\abovecaptionskip}{0pt}%
+\setlength{\belowcaptionskip}{10pt}%
 \pagestyle{plain}
 
 % 代码样式
