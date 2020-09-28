@@ -18,7 +18,7 @@ LaTeX 模板用于山东大学实验报告(*~~song的意思为宋体~~*)
 + 删除附录
 + image文件夹更名为figures
 
-![demo](figures/README/demo.png)
+![demo](figures/demo.png)
 
 ## 参考
 
