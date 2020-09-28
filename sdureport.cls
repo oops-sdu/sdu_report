@@ -101,7 +101,7 @@
 	\end{framed}
 	% \vspace{4 mm}\begin{center}\huge{附录}\end{center}
 }
-%\newcommand\sduAppendix{\vspace{4 mm}\begin{center}\huge{附录}\end{center}}
+\newcommand\sduAppendix{\vspace{4 mm}\begin{center}\huge{附录}\end{center}}
 
 
 

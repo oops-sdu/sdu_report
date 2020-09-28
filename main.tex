@@ -72,5 +72,16 @@
 
 \end{sduDocument}
 
+\sduAppendix % 不需要附录二字注释掉这一行即可
+\begin{lstlisting}[language=matlab]
+	x = load("data2/ex2x.dat");
+	y = load("data2/ex2y.dat");
+	n = length(x);
+	x = [ones(n, 1), x];
+	stds = std(x);
+	mu = mean(x);
+	x(:, 2) = (x(:, 2) - mu(2)) ./ stds(2);
+	x(:, 3) = (x(:, 3) - mu(3)) ./ stds(3);
+\end{lstlisting}
 
 \end{document}
