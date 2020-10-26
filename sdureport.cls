@@ -44,8 +44,8 @@
 
 
 \titleformat{\section}[block]{\large\bfseries}{}{0em}{\begin{picture}(1,1)\put(-9,26.1){\line(1,0){500}}\end{picture}}
-\titleformat{\subsection}[block]{\large}{\arabic{subsection}}{0.5em}{}
-\titleformat{\subsubsection}[block]{\large}{\arabic{subsection}.\arabic{subsubsection}}{0.5em}{}
+\titleformat{\subsection}[block]{\large\bfseries}{\arabic{subsection}}{0.5em}{}
+\titleformat{\subsubsection}[block]{}{\arabic{subsection}.\arabic{subsubsection}}{0.5em}{}
 
 % \setlength{\parindent}{0pt}
 \setlength{\abovecaptionskip}{0pt}%
