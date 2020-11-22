@@ -65,11 +65,12 @@
 	rulecolor=\color{gray!35},
 	backgroundcolor=\color{gray!5},
 	escapeinside=``, % 英文分号中可写入中文
+	showstringspaces=false,   
 	xleftmargin=2em, aboveskip=1em,
 	framexleftmargin=2em,
 	breaklines = true,
 	breakatwhitespace = true,
-} 
+}
 %% ----------------------------- define command-----------------------------
 % new document
 \newenvironment{sduDocument}

@@ -2,6 +2,9 @@
 
 LaTeX 模板用于山东大学实验报告(*~~song的意思为宋体~~*)
 
+## 2020.11.22更新
++ 代码区加入 `showstringspaces=false`修复代码区中的乱码
+
 ## 2020.10.28更新
 + 引入amsmath包，现在可以正常使用`\begin{aligned}\end{aligned}`了
 
