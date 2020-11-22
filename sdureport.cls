@@ -57,7 +57,13 @@
 \definecolor{gray}{rgb}{0.5,0.5,0.5}
 \definecolor{mauve}{rgb}{0.58,0,0.82}
 \lstset{
+	columns=fullflexible,
+	captionpos=b,  
 	numbers=left, 
+	breaklines=true,   
+	captionpos=b, 
+	tabsize=4,
+	stringstyle=\ttfamily,
 	numberstyle= \tiny, 
 	keywordstyle= \color{ blue!70},
 	commentstyle= \color{red!50!green!50!blue!50}, 
