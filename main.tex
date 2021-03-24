@@ -12,47 +12,50 @@
 \usepackage{booktabs}
 \usepackage{amsmath}
 \usepackage{anyfontsize} % 公式字体报错问题
+
+% 列表间距过大
+% \usepackage{paralist}
+% \let\itemize\compactitem
+% \let\enditemize\endcompactitem
+% \let\enumerate\compactenum
+% \let\endenumerate\endcompactenum
+% \let\description\compactdesc
+% \let\enddescription\endcompactdesc
+
 % initialize the variable texts
 \sduCollege{计算机科学与技术}
-\sduCourse{计算机组成与设计}
+\sduCourse{机器学习（双语）}
 \sduSdudentId{202012345678}
 \sduName{你的姓名}
 \sduClass{你的班级}
-\sduExperimentalTopics{实验2\  逻辑运算电路}
+\sduExperimentalTopics{实验1\  线性回归}
 \sduExexperimentalHours{2h}
 \sduDate{\today}
 
 \begin{document}
 \begin{sduDocument}
 	\section{实验目的：}
-	设计一个能实现1位逻辑乘$ab$、逻辑或$a+b$、半加$(a\bigoplus b)$的逻辑运算电路。
+	\begin{enumerate}
+		\renewcommand{\labelenumi}{(\theenumi)}
+		\item 掌握梯度下降算法。
+		\item 理解损失函数与梯度下降算法之间的关系。
+	\end{enumerate}
 
 	\section{实验软件和硬件环境：}
 	\begin{itemize}[leftmargin=1em]
 		\item QuartusII 软件
-		\item Windows10 Intel(R) Core(TM) i7-8750H CPU @ 2.20GHz
+		\item 硬件：Windows10 AMD Ryzen 7 4800H with Radeon Graphics 2.90GH
 	\end{itemize}
 
 
 	\section{实验步骤：}
-	段落	段落	段落	段落	段落	段落
-	段落
 
-
-
-	段落	段落
-	\subsection{二级标题}
-	\subsubsection{三级标题}
-
-	有序列表
+	\subsection{列表}
 	\begin{enumerate}
 		\item 迭代次数：1868
 		\item $\theta$：[-0.0566, 1.4720, 1.5706]
-		\item 见：图\ref{L1}
-		\item 见：图\ref{b1}
-		\item 此学生不被录取的概率：0.6680
 	\end{enumerate}
-
+	\subsection{并排图片：}
 	\begin{figure}[H]
 		\subfigure[Loss 变化曲线]{
 			\label{L1}
@@ -62,15 +65,29 @@
 			\includegraphics[width=0.45\textwidth]{figures/b1.png}}
 		\caption{梯度下降法}
 	\end{figure}
+
+	\subsection{表格：}
+	\begin{table}[H]
+		\caption{第二问结果观察}
+		\centering
+		\linespread{1.5}
+		\begin{tabular}{ccc}
+			\toprule
+			$c$  & 数据集1成功率 & 数据集2成功率 \\
+			\midrule
+			0.01 & 1             & 1             \\
+			0.1  & 1             & 1             \\
+			\bottomrule
+		\end{tabular}
+	\end{table}
+
+	\subsection{图片：}
 	\begin{figure}[H]
-		\subfigure[Loss 变化曲线]{
-			\label{L2}
-			\includegraphics[width=0.45\textwidth]{figures/L2.png}}
-		\subfigure[Decision Boundary]{
-			\label{b2}
-			\includegraphics[width=0.45\textwidth]{figures/b2.png}}
+		\centering
+		\includegraphics[width=0.7\textwidth]{figures/L2.png}
 		\caption{牛顿法}
 	\end{figure}
+
 
 \end{sduDocument}
 
