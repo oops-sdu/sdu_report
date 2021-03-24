@@ -43,8 +43,9 @@
 \setCJKmainfont[Path=fonts/,BoldFont={SourceHanSansHWSC-Bold.otf}]{SourceHanSansHWSC-Regular.otf}
 
 
-\titleformat{\section}[block]{\large\bfseries}{}{0em}{\begin{picture}(1,1)\put(-9,26.1){\line(1,0){500}}\end{picture}}
-\titleformat{\subsection}[block]{\large\bfseries}{\arabic{subsection}}{0.5em}{}
+% \titleformat{\section}[block]{\large\bfseries}{}{0em}{\begin{picture}(1,1)\put(-9,26.1){\line(1,0){500}}\end{picture}}
+\titleformat{\section}[block]{\large\bfseries}{}{0em}{\begin{picture}(1,1)\put(-9,22.5){\line(1,0){500}}\end{picture}}
+\titleformat{\subsection}[block]{\large\bfseries}{\chinese{subsection}}{0.5em}{}
 \titleformat{\subsubsection}[block]{}{\arabic{subsection}.\arabic{subsubsection}}{0.5em}{}
 
 % \setlength{\parindent}{0pt}
@@ -90,15 +91,15 @@
 		\setlength{\unitlength}{1mm}
 %		\put( 17, -45.6){\line(1,0){176}} % 上横线
 		\put( 20, -51.6){\makebox(0,0)[l]{学号：\sdu@tokens@sdudentId}}
-		\put( 77, -55.6){\line(0,1){9}}
+		\put( 77, -55.6){\line(0,1){8.5}}
 		\put( 80, -51.6){\makebox(0,0)[l]{姓名：\sdu@tokens@name}}
-		\put( 137, -55.6){\line(0,1){9}}
+		\put( 137, -55.6){\line(0,1){8.5}}
 		\put( 140, -51.6){\makebox(0,0)[l]{班级：\sdu@tokens@class}}
 		\put( 17, -55.6){\line(1,0){176}} % 下横线
 		\put( 20, -60.6){\makebox(0,0)[l]{实验题目：\sdu@tokens@experimentalTopics}}
 		\put( 17, -65.6){\line(1,0){176}} % 下横线
 		\put( 20, -70.6){\makebox(0,0)[l]{实验学时：\sdu@tokens@experimentalHours}}
-		\put( 77, -74.8){\line(0,1){9.3}}
+		\put( 77, -76.0){\line(0,1){10.5}}
 		\put( 80, -70.6){\makebox(0,0)[l]{实验日期：\sdu@tokens@date}}
 		% \put( 17, -75.6){\line(1,0){176}} % 下横线
 	}
