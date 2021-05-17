@@ -91,21 +91,21 @@
 	\begin{framed}
 	\AddToShipoutPictureBG*{%
 		\setlength{\unitlength}{1mm}
-%		\put( 17, -45.6){\line(1,0){176}} % 上横线
+		% \put( 17, -45.6){\line(1,0){176}} % 上横线
 		\put( 20, -51.0){\makebox(0,0)[l]{学号：\sdu@tokens@sdudentId}}
-		\put( 77, -55.6){\line(0,1){9}}
+		\put( 77, -55.6){\line(0,1){8.8}}
 		\put( 80, -51.0){\makebox(0,0)[l]{姓名：\sdu@tokens@name}}
-		\put( 137, -55.6){\line(0,1){9}}
+		\put( 137, -55.6){\line(0,1){8.8}}
 		\put( 140, -51.0){\makebox(0,0)[l]{班级：\sdu@tokens@class}}
 		\put( 17, -55.6){\line(1,0){176}} % 下横线
-		\put( 20, -60.6){\makebox(0,0)[l]{实验题目：\sdu@tokens@experimentalTopics}}
-		\put( 17, -65.6){\line(1,0){176}} % 下横线
-		\put( 20, -70.6){\makebox(0,0)[l]{实验学时：\sdu@tokens@experimentalHours}}
-		\put( 77, -75.8){\line(0,1){10.2}}
-		\put( 80, -70.6){\makebox(0,0)[l]{实验日期：\sdu@tokens@date}}
+		\put( 20, -59.5){\makebox(0,0)[l]{实验题目：\sdu@tokens@experimentalTopics}}
+		\put( 17, -63.6){\line(1,0){176}} % 下横线
+		\put( 20, -68.0){\makebox(0,0)[l]{实验学时：\sdu@tokens@experimentalHours}}
+		\put( 77, -72.2){\line(0,1){8.5}}
+		\put( 80, -68.0){\makebox(0,0)[l]{实验日期：\sdu@tokens@date}}
 		% \put( 17, -75.6){\line(1,0){176}} % 下横线
 	}
-	\vspace{23.1mm}
+	\vspace{19mm}
 }
 {
 	\end{framed}
