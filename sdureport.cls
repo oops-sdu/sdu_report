@@ -38,24 +38,35 @@
 \RequirePackage[breaklinks,colorlinks,linkcolor=black,citecolor=black,urlcolor=black]{hyperref}
 %% ----------------------------- setting -----------------------------------
 % 字体
+
 \setmainfont{Consolas}
 \setmonofont{Courier New}
 \setCJKmainfont[Path=fonts/,BoldFont={SourceHanSansHWSC-Bold.otf}]{SourceHanSansHWSC-Regular.otf}
 
 
-\titleformat{\section}[block]{\large\bfseries}{}{0em}{\begin{picture}(1,1)\put(-9,26.1){\line(1,0){500}}\end{picture}}
-\titleformat{\subsection}[block]{\large}{\arabic{subsection}}{0.5em}{}
-\titleformat{\subsubsection}[block]{\large}{\arabic{subsection}.\arabic{subsubsection}}{0.5em}{}
+% \titleformat{\section}[block]{\large\bfseries}{}{0em}{\begin{picture}(1,1)\put(-9,26.1){\line(1,0){500}}\end{picture}}
+\titleformat{\section}[block]{\large\bfseries}{}{0em}{\begin{picture}(1,1)\put(-9,22.5){\line(1,0){500}}\end{picture}}
+\titleformat{\subsection}[block]{\large\bfseries}{\chinese{subsection}}{0.5em}{}
+\titleformat{\subsubsection}[block]{}{\arabic{subsection}.\arabic{subsubsection}}{0.5em}{}
 
-\setlength{\parindent}{0pt}
-\pagestyle{plain}
+% \setlength{\parindent}{0pt}
+\setlength{\abovecaptionskip}{0pt}%
+\setlength{\belowcaptionskip}{10pt}%
+% \setlength{\textfloatsep}{5pt}
+\pagestyle{plain} % 页脚
 
 % 代码样式
 \definecolor{dkgreen}{rgb}{0,0.6,0}
 \definecolor{gray}{rgb}{0.5,0.5,0.5}
 \definecolor{mauve}{rgb}{0.58,0,0.82}
 \lstset{
+	columns=fullflexible,
+	captionpos=b,  
 	numbers=left, 
+	breaklines=true,   
+	captionpos=b, 
+	tabsize=4,
+	stringstyle=\ttfamily,
 	numberstyle= \tiny, 
 	keywordstyle= \color{ blue!70},
 	commentstyle= \color{red!50!green!50!blue!50}, 
@@ -63,11 +74,12 @@
 	rulecolor=\color{gray!35},
 	backgroundcolor=\color{gray!5},
 	escapeinside=``, % 英文分号中可写入中文
+	showstringspaces=false,   
 	xleftmargin=2em, aboveskip=1em,
 	framexleftmargin=2em,
 	breaklines = true,
 	breakatwhitespace = true,
-} 
+}
 %% ----------------------------- define command-----------------------------
 % new document
 \newenvironment{sduDocument}
@@ -79,27 +91,27 @@
 	\begin{framed}
 	\AddToShipoutPictureBG*{%
 		\setlength{\unitlength}{1mm}
-%		\put( 17, -45.6){\line(1,0){176}} % 上横线
-		\put( 20, -51.6){\makebox(0,0)[l]{学号：\sdu@tokens@sdudentId}}
-		\put( 77, -55.6){\line(0,1){10}}
-		\put( 80, -51.6){\makebox(0,0)[l]{姓名：\sdu@tokens@name}}
-		\put( 137, -55.6){\line(0,1){10}}
-		\put( 140, -51.6){\makebox(0,0)[l]{班级：\sdu@tokens@class}}
-		\put( 17, -55.6){\line(1,0){176}} % 下横线
-		\put( 20, -61.6){\makebox(0,0)[l]{实验题目：\sdu@tokens@experimentalTopics}}
-		\put( 17, -65.6){\line(1,0){176}} % 下横线
-		\put( 20, -71.6){\makebox(0,0)[l]{实验学时：\sdu@tokens@experimentalHours}}
-		\put( 77, -75.6){\line(0,1){10}}
-		\put( 80, -71.6){\makebox(0,0)[l]{实验日期：\sdu@tokens@date}}
-		\put( 17, -75.6){\line(1,0){176}} % 下横线
+		% \put( 17, -45.6){\line(1,0){176}} % 上横线
+		\put( 20, -51.0){\makebox(0,0)[l]{学号：\sdu@tokens@sdudentId}}
+		\put( 77, -55.1){\line(0,1){8.3}}
+		\put( 80, -51.0){\makebox(0,0)[l]{姓名：\sdu@tokens@name}}
+		\put( 137, -55.1){\line(0,1){8.3}}
+		\put( 140, -51.0){\makebox(0,0)[l]{班级：\sdu@tokens@class}}
+		\put( 17, -55.1){\line(1,0){176}} % 下横线
+		\put( 20, -59.2){\makebox(0,0)[l]{实验题目：\sdu@tokens@experimentalTopics}}
+		\put( 17, -63.3){\line(1,0){176}} % 下横线
+		\put( 20, -67.5){\makebox(0,0)[l]{实验学时：\sdu@tokens@experimentalHours}}
+		\put( 77, -71.5){\line(0,1){8.1}}
+		\put( 80, -67.5){\makebox(0,0)[l]{实验日期：\sdu@tokens@date}}
+		% \put( 17, -75.6){\line(1,0){176}} % 下横线
 	}
-	\vspace{25.2 mm}
+	\vspace{18.4mm}
 }
 {
 	\end{framed}
-	\vspace{4 mm}\begin{center}\huge{附录}\end{center}
+	% \vspace{4 mm}\begin{center}\huge{附录}\end{center}
 }
-%\newcommand\sduAppendix{\vspace{4 mm}\begin{center}\huge{附录}\end{center}}
+\newcommand\sduAppendix{\vspace{4 mm}\begin{center}\huge{附录}\end{center}}
 
 
 
