@@ -1,7 +1,7 @@
 # sdu_report_song
 
 LaTeX 模板用于山东大学实验报告(*~~song的意思为宋体~~*)。
-原![项目地址](https://github.com/oops-sdu/sdu_report)，感谢![sxb学长](https://github.com/suxb201)
+原[项目地址](https://github.com/oops-sdu/sdu_report)，感谢[sxb学长](https://github.com/suxb201)
 
 # 更新
 ## 2021.05.18更新
