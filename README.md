@@ -1,6 +1,6 @@
 # sdu_report_song
 
-LaTeX 模板用于山东大学实验报告(*~~song的意思为宋体~~*)。
+LaTeX 模板用于山东大学实验报告(*~~song的意思为宋体~~*) [项目地址](https://github.com/Naylenv/sdu_report_song/)。
 原[项目地址](https://github.com/oops-sdu/sdu_report)，感谢本项目创始[suxb学长](https://github.com/suxb201)
 
 # 更新
